@@ -1,9 +1,10 @@
 ExpensEase
 ==========
-.. toctree::
 
 Multi-purpose budgeting tool, 2023-2024 coursework at UoP.
 ----------------------------------------------------------
+
+.. toctree::
 
 Names, Student IDs & GitHub IDs - In that order
 Erdit, up2115603, 19395781
