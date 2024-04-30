@@ -6,6 +6,7 @@ Multi-purpose budgeting tool, 2023-2024 coursework at UoP.
 ----------------------------------------------------------
 
 Names, Student IDs & GitHub IDs - In that order
+-----------------------------------------------
 Erdit, up2115603, 19395781
 Toby, up2120860, 128059876
 George, up2117604, 146346646
@@ -17,15 +18,19 @@ Contribution Convention
 Please follow Conventional Commits (https://www.conventionalcommits.org/en/v1.0.0/#summary) as a guide for writing good commit messages when pushing to the repository, this helps everyone understand exactly what you pushed to the repository by just glancing at the commit messages.
 
 How to Use
+----------
 The project runs through cross-origin resource sharing for development and testing.
 
 Backend
+-------
 Backend is developed using Python version 3.11.7 (3.11.8 has been tested too). Any other version of Python has not been tested. This guide assumes you also have pip installed.
 
 Download Tesseract for OCR Scanning
+-----------------------------------
 Tesseract is an open-source OCR engine used by pytesseract for optical character recognition (reading receipt images). Follow these steps to set up Tesseract on your system:
 
 On Windows
+----------
 
 Download the Tesseract installer for Windows from the following link: https://github.com/UB-Mannheim/tesseract/wiki
 Run the installer and follow the installation wizard.
@@ -36,9 +41,11 @@ On macOS
 Install Tesseract using Homebrew by running the following command in the terminal:
 
 brew install tesseract
+
 Homebrew will automatically install the English language pack along with Tesseract.
 
 On Linux:
+---------
 
 Install Tesseract using your package manager. For example, on Ubuntu or Debian:
 
@@ -57,6 +64,7 @@ python -m venv myenv
 Activate the virtual environment.
 
 On Windows:
+-----------
 
 myenv\Scripts\activate
 On macOS and Linux:
@@ -71,6 +79,7 @@ Setup PostgreSQL database
 You must have a locally running postgres database to use the backend and run the project.
 
 Windows
+-------
 
 Download and install PostgreSQL from the official website.
 During installation, set up a username and password for the database.
@@ -105,9 +114,11 @@ DROP TABLE IF EXISTS public."Users";
 Recreate the database by referring to the above.
 
 Create Testing DB
+-----------------
 Unit testing relies on a "testing" database, this database is 1:1 with the above one, just an empty clone of it named "expensease_test". Create it in the exact same way you created the above, main database.
 
 Adjust the .env file
+--------------------
 In the /backend folder, there is a .env-example file. Create a new file just called .env with the same data as the .env-example file.
 
 FLASK_APP=run.py
@@ -119,6 +130,7 @@ SECRET_SESSION_KEY=SKGNaJDK1d034cma!l1
 Replace username and password in the DATABASE_URL with the credentials you set up during PostgreSQL installation.
 
 Running The Unit Tests
+----------------------
 When introducing big changes to the backend, or minor, run pytest whilst in the backend folder to ensure every unit test passes. It's often a good idea to run pytest after every pull too so you can pinpoint any issue that may happen whilst developing the project.
 
 After this is done, the backend is ran by running the run.py file. This file would then create the Flask backend in development mode. Your IDE can handle the running of the python file, or you can simply just run python run.py to run it in a terminal or command line.
