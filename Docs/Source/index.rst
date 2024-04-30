@@ -18,4 +18,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-* :doc:`HowTo <HowTo.rst>`
+* :doc:`HowTo </Docs/Source/HowTo>`
