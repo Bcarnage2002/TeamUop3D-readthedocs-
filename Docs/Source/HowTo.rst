@@ -1,5 +1,4 @@
-.. autosummary::
-   :toctree: generated
+..toctree: generated
 
 ExpensEase
 ==========
