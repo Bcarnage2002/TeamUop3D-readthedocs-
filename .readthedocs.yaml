@@ -9,8 +9,6 @@ python:
   install:
     - requirements: Docs/requirements.txt
     # Install our python package before building the docs
-    - method: pip
-      path: .
 
 sphinx:
   configuration: Docs/Source/conf.py
