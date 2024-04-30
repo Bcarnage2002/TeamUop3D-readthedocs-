@@ -7,13 +7,13 @@ build:
 
 python:
   install:
-    - requirements: docs/requirements.txt
+    - requirements: Docs/requirements.txt
     # Install our python package before building the docs
     - method: pip
       path: .
 
 sphinx:
-  configuration: docs/Source/conf.py
+  configuration: Docs/Source/conf.py
   fail_on_warning: true
 
 formats:
