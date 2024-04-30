@@ -1,4 +1,4 @@
-..toctree: generated
+..toctree::
 
 ExpensEase
 ==========
