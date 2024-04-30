@@ -7,13 +7,20 @@ Multi-purpose budgeting tool, 2023-2024 coursework at UoP.
 
 Names, Student IDs & GitHub IDs - In that order
 -----------------------------------------------
-Erdit, up2115603, 19395781
-Toby, up2120860, 128059876
-George, up2117604, 146346646
-Paul, up2203365, 64145882
-Ben, up2058403, 147066158
-Andreas, up2151158, 128136527
-Elsayed, up968829, 115377482
+Erdit, up2115603, 19395781.
+
+Toby, up2120860, 128059876.
+
+George, up2117604, 146346646.
+
+Paul, up2203365, 64145882.
+
+Ben, up2058403, 147066158.
+
+Andreas, up2151158, 128136527.
+
+Elsayed, up968829, 115377482.
+
 Contribution Convention
 Please follow Conventional Commits (https://www.conventionalcommits.org/en/v1.0.0/#summary) as a guide for writing good commit messages when pushing to the repository, this helps everyone understand exactly what you pushed to the repository by just glancing at the commit messages.
 
