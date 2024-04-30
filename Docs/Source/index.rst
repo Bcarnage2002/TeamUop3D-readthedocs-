@@ -18,4 +18,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-* :Docs:`How TO </Sorce/ReadME>`
+* :docs:`How to </Sorce/ReadME>`
