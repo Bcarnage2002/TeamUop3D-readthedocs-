@@ -15,8 +15,6 @@ Welcome to TeamUoP3D's ExpensEase documentation!
 Indices and tables
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 * :doc:`HowTo`
 * :doc:`apidocumentation`
