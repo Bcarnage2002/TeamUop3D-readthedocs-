@@ -1,10 +1,10 @@
 :orphan:
 
-# ExpensEase API Documentation
+ExpensEase API Documentation
 
-## Authentication (auth.py)
+Authentication (auth.py)
 
-### Register
+Register
 
 - Endpoint: `POST /api/v1/register`
 - Description: Register a new user.
@@ -42,7 +42,7 @@
       }
       ```
 
-### Login
+Login
 
 - Endpoint: `POST /api/v1/login`
 - Description: Authenticate and log in a user.
@@ -73,7 +73,7 @@
       }
       ```
 
-### Logout
+Logout
 
 - Endpoint: `DELETE /api/v1/logout`
 - Description: Log out the currently authenticated user.
@@ -88,9 +88,9 @@
       }
       ```
 
-## Receipts (receipt.py)
+Receipts (receipt.py)
 
-### Upload Receipt
+Upload Receipt
 
 - Endpoint: `POST /api/v1/receipt/upload`
 - Description: Upload a receipt image and process it.
@@ -121,7 +121,7 @@
       }
       ```
 
-### Save Receipt
+Save Receipt
 
 - Endpoint: `POST /api/v1/receipt/save_receipt`
 - Description: Save a processed receipt.
@@ -157,9 +157,9 @@
       }
       ```
 
-## Budgets (budget.py)
+Budgets (budget.py)
 
-### Create Budget
+Create Budget
 
 - Endpoint: `POST /api/v1/budget/create`
 - Description: Create a new budget.
@@ -195,7 +195,7 @@
       }
       ```
 
-### Get Budget
+Get Budget
 
 - Endpoint: `GET /api/v1/budget/<budget_id>`
 - Description: Retrieve a specific budget by ID.
@@ -228,7 +228,7 @@
       }
       ```
 
-### Update Budget
+Update Budget
 
 - Endpoint: `PUT /api/v1/budget/<budget_id>`
 - Description: Update a specific budget by ID.
@@ -258,7 +258,7 @@
       }
       ```
 
-### Delete Budget
+Delete Budget
 
 - Endpoint: `DELETE /api/v1/budget/<budget_id>`
 - Description: Delete a specific budget by ID.
@@ -282,7 +282,7 @@
       }
       ```
 
-### Get User Budgets
+Get User Budgets
 
 - Endpoint: `GET /api/v1/budget/`
 - Description: Retrieve all budgets for the authenticated user.
@@ -309,9 +309,9 @@
       }
       ```
 
-## Expenses (expense.py)
+Expenses (expense.py)
 
-### Get Expenses
+Get Expenses
 
 - Endpoint: `GET /api/v1/expense/`
 - Description: Retrieve expenses with filtering, sorting, and pagination.
@@ -344,7 +344,7 @@
       }
       ```
 
-### Update Expense
+Update Expense
 
 - Endpoint: `PUT /api/v1/expense/<expense_id>`
 - Description: Update a specific expense by ID.
@@ -376,7 +376,7 @@
       }
       ```
 
-### Delete Expense
+Delete Expense
 
 - Endpoint: `DELETE /api/v1/expense/<expense_id>`
 - Description: Delete a specific expense by ID.
@@ -400,9 +400,9 @@
       }
       ```
 
-## Categories (category.py)
+Categories (category.py)
 
-### Get User Categories
+Get User Categories
 
 - Endpoint: `GET /api/v1/category/`
 - Description: Retrieve all categories for the authenticated user.
@@ -434,7 +434,7 @@
       }
       ```
 
-### Create Category
+Create Category
 
 - Endpoint: `POST /api/v1/category/`
 - Description: Create a new category for the user.
@@ -467,7 +467,7 @@
       }
       ```
 
-### Update Category
+Update Category
 
 - Endpoint: `PUT /api/v1/category/<int:category_id>`
 - Description: Update a specific category by ID.
@@ -497,7 +497,7 @@
       }
       ```
 
-### Delete Category
+Delete Category
 
 - Endpoint: `DELETE /api/v1/category/<int:category_id>`
 - Description: Delete a specific category by ID. Only custom categories.
@@ -521,12 +521,12 @@
       }
       ```
 
-* Endpoint: `GET /api/v1/category/`
-* Description: Retrieve all categories for the authenticated user.
-* Response:
-  * Success:
-    * Status Code: 200
-    * Body:
+ Endpoint: `GET /api/v1/category/`
+Description: Retrieve all categories for the authenticated user.
+Response:
+Success:
+Status Code: 200
+Body:
       <pre><div class="dark bg-gray-950 rounded-md"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>json</span><span class="" data-state="closed"></span></div></div></pre>
 
 ```json
@@ -545,9 +545,9 @@
 ```
 
 ---
-## Account Settings (auth.py)
+Account Settings (auth.py)
 
-### Change Password
+Change Password
 - Endpoint: `POST /api/v1/change_password`
 - Description: Change the password of the currently authenticated user.
 - Request Body:
@@ -586,7 +586,7 @@
       }
       ```
 
-### Change Email
+Change Email
 - Endpoint: `POST /api/v1/change_email`
 - Description: Change the email of the currently authenticated user.
 - Request Body:
@@ -624,7 +624,7 @@
       }
       ```
   
-### Delete Account
+Delete Account
 - Endpoint: `DELETE /api/v1/delete_account`
 - Description: Delete the account of the currently authenticated user.
 - Response:
@@ -661,4 +661,4 @@
 
 
 
-## Notice
+Notice
