@@ -17,14 +17,14 @@ Register
 
    .. code:: json
 
-      
+      {
         "username": "string",
         "email": "string",
         "first_name": "string",
         "last_name": "string",
         "password": "string",
         "pin": "string"
-      
+      }
 
 -  Response:
 
