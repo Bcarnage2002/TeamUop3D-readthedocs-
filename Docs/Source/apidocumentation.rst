@@ -15,7 +15,6 @@ Register
 
 -  Request Body:
 
-   .. code:: json
 
       {
         "username": "string",
