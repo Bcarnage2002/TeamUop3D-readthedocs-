@@ -38,6 +38,7 @@ Register
               "success": true,
               "message": "User registered successfully",
               "data": 
+
             "user_id": integer
               
             
@@ -138,7 +139,8 @@ Upload Receipt
             
               "success": true,
               "message": "Receipt processed successfully",
-              "data": 
+              "data":
+
             "receipt_id": "string",
             "category": "string",
             "total_price": float
@@ -186,6 +188,7 @@ Save Receipt
       
               "success": true,
               "message": "Receipt saved successfully",
+
               "data": 
             "expense_id": integer
               
@@ -234,6 +237,7 @@ Create Budget
 
             
               "success": true,
+
               "message": "Budget created successfully",
               "data": 
             "budget_id": integer
@@ -266,7 +270,6 @@ Get Budget
       -  Body:
 
 
-            
               "success": true,
               "message": "Budget retrieved successfully",
               "data": 
