@@ -189,9 +189,8 @@ Save Receipt
               "success": true,
               "message": "Receipt saved successfully",
 
-              "data": 
+              "data":
             "expense_id": integer
-              
             
 
    -  Error:
