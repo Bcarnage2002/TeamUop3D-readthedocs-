@@ -1,5 +1,15 @@
 :orphan:
 
+ExpensEase API Documentation
+============================
+
+Authentication (auth.py)
+------------------------
+
+Register
+~~~~~~~~
+
+-  Endpoint: ``POST /api/v1/register``
 
 -  Description: Register a new user.
 
