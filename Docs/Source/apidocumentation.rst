@@ -533,11 +533,8 @@ Get User Categories
                   "category_id": integer,
                   "category_name": "string",
                   "user_id": integer
-                ,
-                ...
               ]
             
-
    -  Error:
 
       -  Status Code: 401 (Unauthorized)
@@ -687,10 +684,7 @@ Delete Category
          "category_id": integer,
          "category_name": "string",
          "user_id": integer
-       ,
-       ...
      ]
-   
 
 --------------
 
