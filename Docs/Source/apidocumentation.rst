@@ -190,6 +190,7 @@ Save Receipt
               "message": "Receipt saved successfully",
 
               "data":
+
             "expense_id": integer
             
 
@@ -238,6 +239,7 @@ Create Budget
               "success": true,
 
               "message": "Budget created successfully",
+
               "data": 
             "budget_id": integer
               
@@ -270,6 +272,7 @@ Get Budget
 
 
               "success": true,
+
               "message": "Budget retrieved successfully",
               "data": 
             "budget_id": integer,
