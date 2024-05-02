@@ -33,7 +33,6 @@ Register
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -49,7 +48,6 @@ Register
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -65,7 +63,6 @@ Login
 
 -  Request Body:
 
-   .. code:: json
 
       {
         "username": "string",
@@ -80,7 +77,6 @@ Login
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -93,7 +89,6 @@ Login
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -113,7 +108,6 @@ Logout
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -140,7 +134,6 @@ Upload Receipt
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -158,7 +151,6 @@ Upload Receipt
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -174,7 +166,6 @@ Save Receipt
 
 -  Request Body:
 
-   .. code:: json
 
       {
         "receipt_id": "string",
@@ -191,7 +182,6 @@ Save Receipt
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -207,7 +197,6 @@ Save Receipt
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -226,7 +215,6 @@ Create Budget
 
 -  Request Body:
 
-   .. code:: json
 
       {
         "category_id": integer,
@@ -243,7 +231,6 @@ Create Budget
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -259,7 +246,6 @@ Create Budget
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -279,7 +265,6 @@ Get Budget
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -301,7 +286,6 @@ Get Budget
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -317,7 +301,6 @@ Update Budget
 
 -  Request Body:
 
-   .. code:: json
 
       {
         "total_amount": number
@@ -331,7 +314,6 @@ Update Budget
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -344,7 +326,6 @@ Update Budget
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -364,7 +345,6 @@ Delete Budget
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -377,7 +357,6 @@ Delete Budget
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -397,7 +376,6 @@ Get User Budgets
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -446,7 +424,6 @@ Get Expenses
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -472,7 +449,6 @@ Update Expense
 
 -  Request Body:
 
-   .. code:: json
 
       {
         "description": "string" (optional),
@@ -488,7 +464,6 @@ Update Expense
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -501,7 +476,6 @@ Update Expense
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -521,7 +495,6 @@ Delete Expense
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -534,7 +507,6 @@ Delete Expense
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -557,7 +529,6 @@ Get User Categories
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -578,7 +549,6 @@ Get User Categories
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -594,7 +564,6 @@ Create Category
 
 -  Request Body:
 
-   .. code:: json
 
       {
         "category_name": "string"
@@ -608,7 +577,6 @@ Create Category
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -624,7 +592,6 @@ Create Category
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -640,7 +607,6 @@ Update Category
 
 -  Request Body:
 
-   .. code:: json
 
       {
         "category_name": "string"
@@ -654,7 +620,6 @@ Update Category
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -667,7 +632,6 @@ Update Category
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -688,7 +652,6 @@ Delete Category
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -701,7 +664,6 @@ Delete Category
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -721,7 +683,6 @@ Delete Category
 
             <pre><div class="dark bg-gray-950 rounded-md"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>json</span><span class="" data-state="closed"></span></div></div></pre>
 
-.. code:: json
 
    {
      "success": true,
@@ -750,7 +711,6 @@ Change Password
 
 -  Request Body:
 
-   .. code:: json
 
       {
         "password": "string",
@@ -765,7 +725,6 @@ Change Password
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -778,7 +737,6 @@ Change Password
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -791,7 +749,6 @@ Change Password
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -807,7 +764,6 @@ Change Email
 
 -  Request Body:
 
-   .. code:: json
 
       {
         "new_email": "string"
@@ -821,7 +777,6 @@ Change Email
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": true,
@@ -834,8 +789,6 @@ Change Email
 
       -  Body:
 
-         .. code:: json
-
             {
               "success": false,
               "message": "New email is required"
@@ -847,7 +800,6 @@ Change Email
 
       -  Body:
 
-         .. code:: json
 
             {
               "success": false,
@@ -867,8 +819,6 @@ Delete Account
 
       -  Body:
 
-         .. code:: json
-
             {
               "success": true,
               "message": "Account deleted successfully"
@@ -879,8 +829,6 @@ Delete Account
       -  Status Code: 500 (Unauthorized)
 
       -  Body:
-
-         .. code:: json
 
             {
               "success": false,
