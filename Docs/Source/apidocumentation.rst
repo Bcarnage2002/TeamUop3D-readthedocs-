@@ -38,7 +38,7 @@ Register
               "success": true,
               "message": "User registered successfully",
               "data": 
-                "user_id": integer
+            "user_id": integer
               
             
 
@@ -139,9 +139,9 @@ Upload Receipt
               "success": true,
               "message": "Receipt processed successfully",
               "data": 
-                "receipt_id": "string",
-                "category": "string",
-                "total_price": float
+            "receipt_id": "string",
+            "category": "string",
+            "total_price": float
               
             
 
@@ -187,7 +187,7 @@ Save Receipt
               "success": true,
               "message": "Receipt saved successfully",
               "data": 
-                "expense_id": integer
+            "expense_id": integer
               
             
 
@@ -236,7 +236,7 @@ Create Budget
               "success": true,
               "message": "Budget created successfully",
               "data": 
-                "budget_id": integer
+            "budget_id": integer
               
             
 
@@ -270,13 +270,13 @@ Get Budget
               "success": true,
               "message": "Budget retrieved successfully",
               "data": 
-                "budget_id": integer,
-                "user_id": integer,
-                "category_id": integer,
-                "total_amount": number,
-                "current_amount": number,
-                "start_date": "string" (YYYY-MM-DD),
-                "end_date": "string" (YYYY-MM-DD)
+            "budget_id": integer,
+            "user_id": integer,
+            "category_id": integer,
+            "total_amount": number,
+            "current_amount": number,
+            "start_date": "string" (YYYY-MM-DD),
+            "end_date": "string" (YYYY-MM-DD)
               
             
 
@@ -433,6 +433,7 @@ Get Expenses
                   "description": "string",
                   "date": "string" (YYYY-MM-DD),
                   "category": "string"
+
                 ]
 
 Update Expense
@@ -533,6 +534,7 @@ Get User Categories
                   "category_id": integer,
                   "category_name": "string",
                   "user_id": integer
+
               ]
             
    -  Error:
@@ -571,10 +573,10 @@ Create Category
 
 
             
-              "success": true,
-              "message": "Category created successfully",
-              "data": 
-                "category_id": integer
+            "success": true,
+            "message": "Category created successfully",
+            "data": 
+            "category_id": integer
               
             
 
@@ -684,6 +686,7 @@ Delete Category
          "category_id": integer,
          "category_name": "string",
          "user_id": integer
+
      ]
 
 --------------
