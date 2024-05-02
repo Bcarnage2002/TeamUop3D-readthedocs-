@@ -1,3 +1,5 @@
+:orphan:
+
 # ExpensEase API Documentation
 
 ## Authentication (auth.py)
