@@ -16,14 +16,14 @@ Register
 -  Request Body:
 
 
-      {
+      
         "username": "string",
         "email": "string",
         "first_name": "string",
         "last_name": "string",
         "password": "string",
         "pin": "string"
-      }
+      
 
 -  Response:
 
@@ -34,13 +34,13 @@ Register
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "User registered successfully",
-              "data": {
+              "data": 
                 "user_id": integer
-              }
-            }
+              
+            
 
    -  Error:
 
@@ -49,10 +49,10 @@ Register
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Error message"
-            }
+            
 
 Login
 ~~~~~
@@ -64,10 +64,10 @@ Login
 -  Request Body:
 
 
-      {
+      
         "username": "string",
         "password": "string"
-      }
+      
 
 -  Response:
 
@@ -78,10 +78,10 @@ Login
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Login successful"
-            }
+            
 
    -  Error:
 
@@ -90,10 +90,10 @@ Login
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Invalid username or password."
-            }
+            
 
 Logout
 ~~~~~~
@@ -109,10 +109,10 @@ Logout
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Logout successful"
-            }
+            
 
 Receipts (receipt.py)
 ---------------------
@@ -135,15 +135,15 @@ Upload Receipt
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Receipt processed successfully",
-              "data": {
+              "data": 
                 "receipt_id": "string",
                 "category": "string",
                 "total_price": float
-              }
-            }
+              
+            
 
    -  Error:
 
@@ -152,10 +152,10 @@ Upload Receipt
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Error message"
-            }
+            
 
 Save Receipt
 ~~~~~~~~~~~~
@@ -167,12 +167,12 @@ Save Receipt
 -  Request Body:
 
 
-      {
+      
         "receipt_id": "string",
         "description": "string",
         "total_price": number (optional),
         "category": "string" (optional)
-      }
+      
 
 -  Response:
 
@@ -183,13 +183,13 @@ Save Receipt
       -  Body:
 
 
-            {
+      
               "success": true,
               "message": "Receipt saved successfully",
-              "data": {
+              "data": 
                 "expense_id": integer
-              }
-            }
+              
+            
 
    -  Error:
 
@@ -198,10 +198,10 @@ Save Receipt
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Error message"
-            }
+            
 
 Budgets (budget.py)
 -------------------
@@ -216,12 +216,12 @@ Create Budget
 -  Request Body:
 
 
-      {
+      
         "category_id": integer,
         "total_amount": number,
         "start_date": "string" (YYYY-MM-DD),
         "end_date": "string" (YYYY-MM-DD)
-      }
+      
 
 -  Response:
 
@@ -232,13 +232,13 @@ Create Budget
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Budget created successfully",
-              "data": {
+              "data": 
                 "budget_id": integer
-              }
-            }
+              
+            
 
    -  Error:
 
@@ -247,10 +247,10 @@ Create Budget
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Error message"
-            }
+            
 
 Get Budget
 ~~~~~~~~~~
@@ -266,10 +266,10 @@ Get Budget
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Budget retrieved successfully",
-              "data": {
+              "data": 
                 "budget_id": integer,
                 "user_id": integer,
                 "category_id": integer,
@@ -277,8 +277,8 @@ Get Budget
                 "current_amount": number,
                 "start_date": "string" (YYYY-MM-DD),
                 "end_date": "string" (YYYY-MM-DD)
-              }
-            }
+              
+            
 
    -  Error:
 
@@ -287,10 +287,10 @@ Get Budget
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Budget not found"
-            }
+            
 
 Update Budget
 ~~~~~~~~~~~~~
@@ -302,9 +302,9 @@ Update Budget
 -  Request Body:
 
 
-      {
+      
         "total_amount": number
-      }
+      
 
 -  Response:
 
@@ -315,10 +315,10 @@ Update Budget
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Budget updated successfully"
-            }
+            
 
    -  Error:
 
@@ -327,10 +327,10 @@ Update Budget
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Budget not found"
-            }
+            
 
 Delete Budget
 ~~~~~~~~~~~~~
@@ -346,10 +346,10 @@ Delete Budget
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Budget deleted successfully"
-            }
+            
 
    -  Error:
 
@@ -358,10 +358,10 @@ Delete Budget
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Budget not found"
-            }
+            
 
 Get User Budgets
 ~~~~~~~~~~~~~~~~
@@ -377,11 +377,11 @@ Get User Budgets
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Budgets retrieved successfully",
               "data": [
-                {
+                
                   "budget_id": integer,
                   "user_id": integer,
                   "category_id": integer,
@@ -389,10 +389,10 @@ Get User Budgets
                   "current_amount": number,
                   "start_date": "string" (YYYY-MM-DD),
                   "end_date": "string" (YYYY-MM-DD)
-                },
+                ,
                 ...
               ]
-            }
+            
 
 Expenses (expense.py)
 ---------------------
@@ -425,20 +425,20 @@ Get Expenses
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Expenses retrieved successfully",
               "data": [
-                {
+                
                   "expense_id": integer,
                   "amount": number,
                   "description": "string",
                   "date": "string" (YYYY-MM-DD),
                   "category": "string"
-                },
+                ,
                 ...
               ]
-            }
+            
 
 Update Expense
 ~~~~~~~~~~~~~~
@@ -450,11 +450,11 @@ Update Expense
 -  Request Body:
 
 
-      {
+      
         "description": "string" (optional),
         "amount": number (optional),
         "category": "string" (optional)
-      }
+      
 
 -  Response:
 
@@ -465,10 +465,10 @@ Update Expense
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Expense updated successfully"
-            }
+            
 
    -  Error:
 
@@ -477,10 +477,10 @@ Update Expense
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Expense not found or unauthorized"
-            }
+            
 
 Delete Expense
 ~~~~~~~~~~~~~~
@@ -496,10 +496,10 @@ Delete Expense
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Expense deleted successfully"
-            }
+            
 
    -  Error:
 
@@ -508,10 +508,10 @@ Delete Expense
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Expense not found or unauthorized"
-            }
+            
 
 Categories (category.py)
 ------------------------
@@ -530,18 +530,18 @@ Get User Categories
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Categories retrieved successfully",
               "data": [
-                {
+                
                   "category_id": integer,
                   "category_name": "string",
                   "user_id": integer
-                },
+                ,
                 ...
               ]
-            }
+            
 
    -  Error:
 
@@ -550,10 +550,10 @@ Get User Categories
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Invalid session token"
-            }
+            
 
 Create Category
 ~~~~~~~~~~~~~~~
@@ -565,9 +565,9 @@ Create Category
 -  Request Body:
 
 
-      {
+      
         "category_name": "string"
-      }
+      
 
 -  Response:
 
@@ -578,13 +578,13 @@ Create Category
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Category created successfully",
-              "data": {
+              "data": 
                 "category_id": integer
-              }
-            }
+              
+            
 
    -  Error:
 
@@ -593,10 +593,10 @@ Create Category
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Category name is required"
-            }
+            
 
 Update Category
 ~~~~~~~~~~~~~~~
@@ -608,9 +608,9 @@ Update Category
 -  Request Body:
 
 
-      {
+      
         "category_name": "string"
-      }
+      
 
 -  Response:
 
@@ -621,10 +621,10 @@ Update Category
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Category updated successfully"
-            }
+            
 
    -  Error:
 
@@ -633,10 +633,10 @@ Update Category
       -  Body:
 
 
-            {
+      
               "success": false,
               "message": "Category not found or unauthorized"
-            }
+            
 
 Delete Category
 ~~~~~~~~~~~~~~~
@@ -653,10 +653,10 @@ Delete Category
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Category deleted successfully"
-            }
+            
 
    -  Error:
 
@@ -665,10 +665,10 @@ Delete Category
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Category not found or unauthorized"
-            }
+            
 
 -  Endpoint: ``GET /api/v1/category/``
 -  Description: Retrieve all categories for the authenticated user.
@@ -684,18 +684,18 @@ Delete Category
             <pre><div class="dark bg-gray-950 rounded-md"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>json</span><span class="" data-state="closed"></span></div></div></pre>
 
 
-   {
+   
      "success": true,
      "message": "Categories retrieved successfully",
      "data": [
-       {
+       
          "category_id": integer,
          "category_name": "string",
          "user_id": integer
-       },
+       ,
        ...
      ]
-   }
+   
 
 --------------
 
@@ -712,10 +712,10 @@ Change Password
 -  Request Body:
 
 
-      {
+      
         "password": "string",
         "new_password": "string"
-      }
+      
 
 -  Response:
 
@@ -726,10 +726,10 @@ Change Password
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Password updated successfully"
-            }
+            
 
    -  Error:
 
@@ -738,10 +738,10 @@ Change Password
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "Invalid password"
-            }
+            
 
    -  Error
 
@@ -750,10 +750,10 @@ Change Password
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "An internal error occured during password update"
-            }
+            
 
 Change Email
 ~~~~~~~~~~~~
@@ -765,9 +765,9 @@ Change Email
 -  Request Body:
 
 
-      {
+      
         "new_email": "string"
-      }
+      
 
 -  Response:
 
@@ -778,10 +778,10 @@ Change Email
       -  Body:
 
 
-            {
+            
               "success": true,
               "message": "Email updated successfully"
-            }
+            
 
    -  Error:
 
@@ -789,10 +789,10 @@ Change Email
 
       -  Body:
 
-            {
+            
               "success": false,
               "message": "New email is required"
-            }
+            
 
    -  Error
 
@@ -801,10 +801,10 @@ Change Email
       -  Body:
 
 
-            {
+            
               "success": false,
               "message": "An internal error occured during email update"
-            }
+            
 
 Delete Account
 ~~~~~~~~~~~~~~
@@ -819,10 +819,10 @@ Delete Account
 
       -  Body:
 
-            {
+            
               "success": true,
               "message": "Account deleted successfully"
-            }
+            
 
    -  Error:
 
@@ -830,10 +830,10 @@ Delete Account
 
       -  Body:
 
-            {
+            
               "success": false,
               "message": "An internal error occured during account deletion"
-            }
+            
 
 Notice
 ------
