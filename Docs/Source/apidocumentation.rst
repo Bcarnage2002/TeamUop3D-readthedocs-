@@ -241,6 +241,7 @@ Create Budget
               "message": "Budget created successfully",
 
               "data": 
+
             "budget_id": integer
               
             
@@ -274,7 +275,9 @@ Get Budget
               "success": true,
 
               "message": "Budget retrieved successfully",
+
               "data": 
+
             "budget_id": integer,
             "user_id": integer,
             "category_id": integer,
