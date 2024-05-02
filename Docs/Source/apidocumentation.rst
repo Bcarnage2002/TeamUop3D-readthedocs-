@@ -389,10 +389,8 @@ Get User Budgets
                   "current_amount": number,
                   "start_date": "string" (YYYY-MM-DD),
                   "end_date": "string" (YYYY-MM-DD)
-                ,
-                ...
+                
               ]
-            
 
 Expenses (expense.py)
 ---------------------
@@ -435,10 +433,7 @@ Get Expenses
                   "description": "string",
                   "date": "string" (YYYY-MM-DD),
                   "category": "string"
-                ,
-                ...
-              ]
-            
+                ]
 
 Update Expense
 ~~~~~~~~~~~~~~
